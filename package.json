@@ -1,0 +1,30 @@
+{
+  "name": "react-native-storybook",
+  "version": "1.0.0",
+  "description": "Helper components and utils for use with Storybook in React Native",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.60.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nona-Creative/react-native-storybook.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "storybook"
+  ],
+  "author": "Cameron Olivier, Jonathon Arnold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nona-Creative/react-native-storybook/issues"
+  },
+  "homepage": "https://github.com/Nona-Creative/react-native-storybook#readme"
+}
