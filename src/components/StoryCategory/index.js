@@ -1,5 +1,5 @@
-import * as StoryCategoryConstants from './StoryCategory.constants'
+import { storyCategories } from './StoryCategory.constants'
 
 export {
-  StoryCategoryConstants,
+  storyCategories,
 }
