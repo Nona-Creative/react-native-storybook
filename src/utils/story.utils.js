@@ -1,25 +1,22 @@
-import { action } from '@storybook/addon-actions' // eslint-disable-line
+import { action } from '@storybook/addon-actions'
 
-const logAction = (actionTaken, componentName) => {
-  console.log(actionTaken, componentName) // eslint-disable-line
+const logEvent = (eventType, value) => {
+  console.log(eventType, value)
 }
 
-export const handleClick = (componentName) => {
-  logAction('Clicked: ', componentName)
-}
+export const handleClick = name => logEvent('Clicked: ', name)
+export const handlePolling = name => logEvent('Polling: ', name)
+export const handleAction = name => logEvent('Action Submitted: ', name)
 
-export const handlePolling = (componentName) => {
-  logAction('Polling: ', componentName)
-}
+export const MockedStore = (key, data) => ({
+  getState: () => ({ [key]: data }),
+  subscribe: () => 0,
+  dispatch: () => action('Dispatched Action'),
+})
 
-export const handleAction = (componentName) => {
-  logAction('Action Submitted: ', componentName)
+export default {
+  handleAction,
+  handleClick,
+  handlePolling,
+  MockedStore,
 }
-
-export const MockedStore = (key, data) => (
-  {
-    getState: () => ({ [key]: data }),
-    subscribe: () => 0,
-    dispatch: action('dispatched Action'),
-  }
-)
