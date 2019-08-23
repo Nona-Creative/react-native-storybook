@@ -4,11 +4,11 @@
   "description": "Helper components and utils for use with Storybook in React Native",
   "main": "index.js",
   "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.60.5"
-  },
-  "devDependencies": {
-    "prop-types": "^15.7.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
