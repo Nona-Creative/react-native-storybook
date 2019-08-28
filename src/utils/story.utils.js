@@ -13,10 +13,3 @@ export const MockedStore = (key, data) => ({
   subscribe: () => 0,
   dispatch: () => action('Dispatched Action'),
 })
-
-export default {
-  handleAction,
-  handleClick,
-  handlePolling,
-  MockedStore,
-}

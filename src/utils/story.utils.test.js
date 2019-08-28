@@ -17,10 +17,8 @@ describe('story utils', () => {
 
       // then ... expect store.getState to return the state
       expect(store.getState()).toEqual({ jon: {} })
-
       // and ... store.subscribe to return 0
       expect(store.subscribe()).toEqual(0)
-
       // and action to have been called with 'Dispatched Action'
       expect(action).toHaveBeenCalledWith('Dispatched Action')
     })
