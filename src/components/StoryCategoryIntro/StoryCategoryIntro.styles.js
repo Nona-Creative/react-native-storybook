@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-import { colors } from '../../src/common/styles'
+import { colors } from '../../styles'
 
 const ComponentBase = {
   container: {
