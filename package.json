@@ -4,7 +4,9 @@
   "description": "Helper components and utils for use with Storybook in React Native",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "help": "package-json-help.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -22,14 +24,17 @@
     "url": "https://github.com/Nona-Creative/react-native-storybook/issues"
   },
   "homepage": "https://github.com/Nona-Creative/react-native-storybook#readme",
-  "dependencies": {
-    "prop-types": "^15.7.2"
-  },
   "peerDependencies": {
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/react-native": "^5.1.11",
     "react": "^16.9.0",
     "react-native": "^0.60.5"
   },
   "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "package-json-help": "0.0.9",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-native": "^0.60.5"
   }

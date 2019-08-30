@@ -1,0 +1,4 @@
+{
+  "test": "run unit tests",
+  "test:watch": "run unit tests in watch mode"
+}
